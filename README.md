@@ -2,13 +2,17 @@
 
 annovarR package
 ==============
-[annovarR](https://github.com/JhuangLab/annovarR) is an integrated open source tool to annotate genetic variants data based on [ANNOVAR](http://annovar.openbioinformatics.org/en/latest/) and other public annotation databases, such as [varcards](http://varcards.biols.ac.cn/), [REDIportal](http://srv00.recas.ba.infn.it/atlas/), .etc. 
+The annovarR package provides R functions as well as database resources which offer an integrated framework to annotate genetic variants from genome and transcriptome data. The wrapper functions of annovarR unified the interface of many published annotation tools, such as [VEP](http://asia.ensembl.org/info/docs/tools/vep/index.html), [ANNOVAR](http://annovar.openbioinformatics.org/), [vcfanno](https://github.com/brentp/vcfanno) and [AnnotationDbi](http://www.bioconductor.org/packages/release/bioc/html/AnnotationDbi.html). It also simplified the use of some of the external annotation tools in R. Besides, massive published genetic variants annotation databases were integrated into annovarR.
 
 The main development motivation of annovarR is to increase the supported database and facilitate the variants annotation work. There are already too many tools and databases available and the usage is quite different. annovarR will integrate these annotation tools and get the merged annotation result in R.
 
-annovarR will not only provide annotation functions (both internal and external) but also established an annotation database pool including published and community contributed.
+![](https://github.com/Miachol/ftp/raw/master/files/images/annovarR_package.jpg)
 
-In addition, to provide more transcription levels of variant database resources, we collected total 1,285 cases public B-progenitor acute lymphoblastic leukemia (B-ALL) transcriptome data from five different published datasets and built a novel large-scale transcript level sequencing variant database. [The Genome Analysis Toolkit (GATK)](https://software.broadinstitute.org/gatk/), [VarScan2](http://massgenomics.org/varscan) and [LoFreq](http://csb5.github.io/lofreq/) be used to call variants from the RNA-seq data (Database called BRVar). This work can help us to screen candidate systematic sequencing bias and evaluate variant calling trait from B-ALL RNA-seq.
+annovarR will not only provides annotation functions (both internal and external) but also hope to establish a shared annotation database resources. In fact, we have made some efforts in the relevant direction that massive scattered databases can easily to be download via using [BioInstaller](https://github.com/JhuangLab/BioInstaller) R package.
+
+Besides, we collected total 1,285 cases public B-progenitor acute lymphoblastic leukemia (B-ALL) transcriptome data from five different published datasets and built a novel large-scale transcript level sequencing variant database. [The Genome Analysis Toolkit (GATK)](https://software.broadinstitute.org/gatk/), [VarScan2](http://massgenomics.org/varscan) and [LoFreq](http://csb5.github.io/lofreq/) be used to call variants from the RNA-seq data (Database called BRVar). This work can help us to screen candidate systematic sequencing bias and evaluate variant calling trait from B-ALL RNA-seq.
+
+![](https://github.com/Miachol/ftp/raw/master/files/images/BRVar_databases.jpg)
 
 If you want to download the 1,285 RNA-seq variants frequency database, you need click [here](http://bioinfo.rjh.com.cn/labs/jhuang/contact.php) and send us a short application message (Whether it is for commercial use?). If the application is applied, we will reply you within 24 hours with a download required license code.
 

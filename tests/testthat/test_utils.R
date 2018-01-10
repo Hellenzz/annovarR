@@ -18,12 +18,12 @@ test_that("select.dat.full.match", {
   file.remove(txt.db)
   
   # MySQL service
-  if (mysqlHasDefault()) {
-    database <- dbConnect(RMySQL::MySQL(), dbname = "annovarr")
-    database <- system.file("extdata", "demo/hg19_cosmic81.txt", package = "annovarR")
-    y <- system.time(x <- select.dat.full.match(database, "disease", "symbol", 
-      list(symbol = rep("AML", 10000)), verbose = FALSE, db.type = "mysql"))
-  }
+  #if (mysqlHasDefault()) {
+  #  database <- dbConnect(RMySQL::MySQL(), dbname = "annovarr")
+  #  database <- system.file("extdata", "demo/hg19_cosmic81.txt", package = "annovarR")
+  #  y <- system.time(x <- select.dat.full.match(database, "disease", "symbol", 
+  #    list(symbol = rep("AML", 10000)), verbose = FALSE, db.type = "mysql"))
+  #}
 })
 
 
